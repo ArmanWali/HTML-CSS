@@ -6,36 +6,52 @@
         <div class="profiles">
         <div class="profile">
             <img class="cat-piture" src="channel-pictures/cat-1.jpg">
-            <p class="oliver">
+            <p class="cat-name">
                 Oliver
             </p>
-            <p class="mutual">
+            <div class="pic-box">
+                <img class="mutual-pic" src="channel-pictures/cat-4.jpeg">
+            </div>
+            <div class="mutual-box">
+                <p class="mutual">
                 2 mutual friends
-            </p>
+                </p>
+            </div>
+            
             <button class="Add">
                 Add Friend
             </button>
         </div>
         <div class="profile">
             <img class="cat-piture" src="channel-pictures/cat-2.jpg">
-            <p class="oliver">
+            <p class="cat-name">
                 Mimi
             </p>
-            <p class="mutual">
+            <div class="pic-box">
+                <img class="mutual-pic" src="channel-pictures/cat-4.jpeg">
+            </div>
+            <div class="mutual-box">
+                <p class="mutual">
                 3 mutual friends
-            </p>
+                </p>
+            </div>
             <button class="Add">
                 Add Friend
             </button>
         </div>
         <div class="profile">
             <img class="cat-piture" src="channel-pictures/cat-3.jpeg">
-            <p class="oliver">
+            <p class="cat-name">
                 Rex
             </p>
-            <p class="mutual">
+            <div class="pic-box">
+                <img class="mutual-pic" src="channel-pictures/cat-4.jpeg">
+            </div>
+            <div class="mutual-box">
+                <p class="mutual">
                 4 mutual friends
-            </p>
+                </p>
+            </div>
             <button class="Add">
                 Add Friend
             </button>
@@ -46,6 +62,19 @@
 </html>
 
 <style>
+    .pic-box, .mutual-box{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .mutual-box{
+        margin-top: 7px;
+    }
+    .mutual-pic{
+        margin-left: 10px;
+        width: 30px;
+        border-radius: 40px;
+    }
+    
     .profiles{
         width: 670px;
         height: 320px;
@@ -65,9 +94,9 @@
         
     }
 
-    .oliver{
+    .cat-name{
         font-weight: bold;
-        font-size: 17.5px;
+        font-size: 18.5px;
         margin-top: 5px;
         margin-bottom: 5px;
         margin-left: 10px;
@@ -79,10 +108,11 @@
         margin-top: 0px;
         margin-bottom: 0px;
         margin-bottom: 10px;
-        margin-left: 10px;
-
+        margin-left: 5px;
+        
     }
     .Add{
+        display: block;
         font-size: 15px;
         background-color: rgb(31, 113, 247);
         color: white;
