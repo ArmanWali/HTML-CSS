@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Practice</title>
+    </head>
+
+    <body>
+        <div class="cat-profiles">
+            <div class="each-cat">
+                <div class="picture-grid">
+                    <img class="cat-picture" src="channel-pictures/cat-1.jpg">
+                </div>
+                <div class="cat-name-grid">
+                    <p class="cat-name">Oliver</p>
+                </div>
+                <div class="mutual-friends-grid">
+                    <div>
+                        <img class="mutual-picture" src="channel-pictures/cat-4.jpeg">
+                    </div>
+                    <div>
+                        <p class="mutual-text">2 mutual friends</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="Add-button">
+                        Add Friend
+                    </button>
+                </div>
+            </div>
+
+            <div class="each-cat">
+                <div class="picture-grid">
+                    <img class="cat-picture" src="channel-pictures/cat-2.jpg">
+                </div>
+                <div class="cat-name-grid">
+                    <p class="cat-name">Mimi</p>
+                </div>
+                <div class="mutual-friends-grid">
+                    <div>
+                        <img class="mutual-picture" src="channel-pictures/cat-4.jpeg">
+                    </div>
+                    <div>
+                        <p class="mutual-text">3 mutual friends</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="Add-button">
+                        Add Friend
+                    </button>
+                </div>
+            </div>
+
+            <div class="each-cat">
+                <div class="picture-grid">
+                    <img class="cat-picture" src="channel-pictures/cat-3.jpeg">
+                </div>
+                <div class="cat-name-grid">
+                    <p class="cat-name">Rex</p>
+                </div>
+                <div class="mutual-friends-grid">
+                    <div>
+                        <img class="mutual-picture" src="channel-pictures/cat-4.jpeg">
+                    </div>
+                    <div>
+                        <p class="mutual-text">4 mutual friends</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="Add-button">
+                        Add Friend
+                    </button>
+                </div>
+            </div>
+
+            
+        </div>
+    </body>
+</html>
+
+<style>
+    p{
+        font-family: Arial;
+    }
+    .cat-profiles{
+        display: grid;
+        grid-template-columns: 180px 180px 180px;
+        column-gap: 20px;
+        
+    }
+
+    .each-cat{
+        display: grid;
+        grid-template-rows: 180px 30px 36px 50px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .cat-picture{
+        width: 100%;
+        height: 180px;
+    }
+    .mutual-friends-grid{
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        margin-left: 7px;
+    }
+    .mutual-picture{
+        width: 100%;
+        border-radius: 30px;
+    }
+    .mutual-text{
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .cat-name{
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 8px;
+        margin-bottom: 0px;
+        margin-left: 9px;
+    }
+    .Add-button{
+        font-family: Arial;
+        font-size: 15px;
+        margin-left: 8px;
+        background-color: rgb(16, 136, 241);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px 10px 20px;
+    }
+</style>
