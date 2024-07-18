@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Box Cat Profiles</title>
+    </head>
+
+    <body>
+        <div class="cat-profiles">
+
+            <div class="each-cat-profile">
+                <div class="cat-picture-box">
+                    <img class="cat-picture" src="channel-pictures/cat-1.jpg">
+                </div>
+                <div class="cat-info-box">
+                    <p class="cat-name">Oliver</p>
+                    <p class="cat-type">the cat</p>
+                    <p class="cat-catagory">popular</p>
+                </div>
+                <div class="follow-box">
+                    <button class="follow-button">
+                        Follow
+                    </button>
+                </div>
+            </div>
+
+            <div class="each-cat-profile">
+                <div class="cat-picture-box">
+                    <img class="cat-picture" src="channel-pictures/cat-2.jpg">
+                </div>
+                <div class="cat-info-box">
+                    <p class="cat-name">Mimi</p>
+                    <p class="cat-type">Sleepy cat</p>
+                    <p class="cat-catagory">popular</p>
+                </div>
+                <div class="follow-box">
+                    <button class="follow-button">
+                        Follow
+                    </button>
+                </div>
+            </div>
+
+            <div class="each-cat-profile">
+                <div class="cat-picture-box">
+                    <img class="cat-picture" src="channel-pictures/cat-3.jpeg">
+                </div>
+                <div class="cat-info-box">
+                    <p class="cat-name">Rex</p>
+                    <p class="cat-type">Swaggy cat</p>
+                    <p class="cat-catagory">popular</p>
+                </div>
+                <div class="follow-box">
+                    <button class="follow-button">
+                        Follow
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
+
+<style>
+    p{
+        font-family: Arial;
+        margin: 0px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+    .cat-profiles{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .each-cat-profile{
+        display: flex;
+        flex-direction: row;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+    }
+
+    .cat-picture-box{
+        width: 70px;
+    }
+    .cat-picture{
+        width: 70px;
+        height: 70px;
+        border-radius: 100px;
+        margin-top: 7px;
+    }
+    .cat-info-box{
+        flex: 1;
+    }
+    .cat-name{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .cat-type{
+        font-size: 20px;
+        color: gray;
+    }
+    .cat-catagory{
+        font-size: 17px;
+        color: gray;
+    }
+    .follow-box{
+        display: flex;
+        flex: 1;
+        align-items: center;
+    }
+    .follow-button{
+        font-size: 18px;
+        font-family: Arial;
+        font-weight: bold;
+        background-color: rgb(53, 125, 240);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px 10px 15px;
+    }
+</style>
+
